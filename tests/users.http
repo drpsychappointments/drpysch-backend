@@ -1,0 +1,18 @@
+### ✅ Create user manually (for admin use)
+POST http://localhost:3005/api/users
+Content-Type: application/json
+
+{
+  "name": "sanju",
+  "email": "appugaru0@gmail.com",
+  "role" : "user",
+  "phone": "9876543210"
+}
+
+### ✅ Get all users (admin only)
+GET http://localhost:3005/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NTY3ZmQzYTYyYWI3NGJjZTljZjNhYyIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzUwNTczNzUxLCJleHAiOjE3NTExNzg1NTF9.woav_0ABcEsfffHPo334UYw_WKvKSaR229oKIp_B_oQ
+
+### ✅ Get user by ID
+GET http://localhost:3005/api/users/68579bd7c92cd16d8711583f
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NTY3ZmQzYTYyYWI3NGJjZTljZjNhYyIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzUwNTczNzUxLCJleHAiOjE3NTExNzg1NTF9.woav_0ABcEsfffHPo334UYw_WKvKSaR229oKIp_B_oQ

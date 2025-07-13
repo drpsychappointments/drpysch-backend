@@ -1,0 +1,28 @@
+### ✅ Create therapist (manual)
+POST http://localhost:3005/api/therapists
+Content-Type: application/json
+
+{
+  "name": "Dr. Sanju",
+  "email": "drsanju@example.com",
+  "phone": "9876543211",
+  "languages": ["Hindi", "English"],
+  "specializations": ["Anxiety", "Depression"],
+  "experienceYears": 5
+}
+
+### ✅ Get all therapists
+GET http://localhost:3005/api/therapists
+
+### ✅ Get therapist by ID
+GET http://localhost:3005/api/therapists/685792244edef03f090a3f01
+
+### ✅ Update therapist (requires auth)
+PUT http://localhost:3005/api/therapists/6857986bba5a5fc607a964d0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NTY3ZmQzYTYyYWI3NGJjZTljZjNhYyIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzUwNTczNzUxLCJleHAiOjE3NTExNzg1NTF9.woav_0ABcEsfffHPo334UYw_WKvKSaR229oKIp_B_oQ
+
+Content-Type: application/json
+
+{
+  "experienceYears": 8
+}
