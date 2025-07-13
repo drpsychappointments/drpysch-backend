@@ -5,7 +5,7 @@
 import express from "express";
 import cors from "cors";
 import { razorpayInstance } from "./utils/razorpay.js";
-
+console.log('first')
 // Import Routes
 import authRoutes from "./routes/auth.routes.js";
 import userRoutes from "./routes/user.routes.js";
